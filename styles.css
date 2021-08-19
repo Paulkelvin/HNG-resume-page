@@ -1,0 +1,146 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: poppins;
+font-size: 1rem;
+}
+body{
+    padding: 2em;
+    display: flex;
+    margin:auto;
+}
+.zuri-logo{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.contact-and-skills{
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width:30em;
+}
+section{
+    padding:2em;
+}
+.contact-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.contact-wrap h2{
+    font-size: 2rem;
+    color:rgb(141, 111, 111);
+}
+.contact-wrap .sub{
+    display: flex;
+    flex-direction: column;
+}
+.sub .telephone, .email, .address{
+    margin-top: 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.call-now, .send-email{
+    background-color: transparent;
+    border: 2px solid rgb(141, 111, 111);
+    width: 7em;
+    margin-top: 0.5em;
+    text-align: center;
+    padding: 0.3em 0;
+}
+.send-email:hover{
+    background-color: rgb(141, 111, 111);
+    border: 2px solid black;
+    animation: blink .6s ease-in-out infinite;
+    -webkit-animation: blink .6s ease-in-out infinite;
+}
+.call-now:hover{
+    background-color: rgb(141, 111, 111);
+    border: 2px solid black;
+    animation:blink .6s ease-in-out infinite;
+    -webkit-animation:blink .6s ease-in-out infinite;
+}
+@keyframes blink {
+    0%{
+        background-color: transparent;
+        border:2px solid rgb(141, 111, 111);
+    }
+    50%{
+        background-color: rgb(141, 111, 111);
+        border:2px solid black;
+        color:gold;
+    }
+    100%{
+        background-color: transparent;
+        border: 2px solid rgb(141, 111, 111);
+    }
+}
+img{
+    width:6em;
+}
+.skills-wrap h2{
+    font-size: 2rem;
+    margin-top: 1.5em;
+    color:rgb(141, 111, 111);
+    letter-spacing: 0.05em;
+}
+.skills-wrap .images{
+    margin-top: 2em;
+}
+.hobbies-wrap h2{
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    color:rgb(141, 111, 111);
+}
+.hobbies-wrap .sprinting, .swimming{
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.main-section{
+    background-color: rgb(141, 111, 111);
+    color: black;
+}
+h1{
+    font-size: 2.2rem;
+    color:gold;
+}
+.main-section h2{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+    color:gold;
+}
+.main-section p{
+    margin-bottom: 1em;
+}
+.certification{
+    color:gold;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2em;
+}
+li{
+    list-style: inside;
+}
+iframe{
+    border:3px solid gold;
+    padding:1em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+@media only screen and (max-width:50em){
+    body{
+        flex-direction: column;
+    }
+    .contact-and-skills{
+        margin:auto;
+        width:100%;
+    }
+}
